@@ -1,22 +1,20 @@
+import { Link } from "react-router-dom";
 import './styles.scss';
+import Johanes from './assets/johanes.jpg';
 
-function Menu() {
-  return(
-    <div className="social glassmorphism">
-      <div className="social-icon">
-        <i className="fa fa-github" />
-      </div>
-      <div className="social-icon">
-        <i className="fa fa-linkedin" />
-      </div>
-      <div className="social-icon">
-        <i className="fa fa-instagram" />
-      </div>
-      <div className="social-icon mode">
-        <i className="fa fa-moon-o" />
-      </div>
-    </div>
+function Navbar() {
+  return (
+    <nav className="menu glassmorphism">
+      <img src={Johanes} alt="Johanes Ronaldo"/>
+      <div className="menu-name">Johanes Ronaldo</div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/">About</Link></li>
+        <li><Link to="/">Portfolio</Link></li>
+        <li><Link to="/">Contact</Link></li>
+      </ul>
+    </nav>
   );
 }
 
-export default Menu;
+export default Navbar;

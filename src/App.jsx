@@ -2,7 +2,8 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.scss';
 import Particles from 'react-particles-js';
 
-import Menu from './components/Menu';
+import Social from './components/Social';
+import Menu from './components/Menu'
 
 import Home from './routes/Home';
 
@@ -26,15 +27,20 @@ function App() {
         className="particles"
         params={particlesParams}
       />
+      <div className="app-wrapper">
+        <Menu />
 
-      <Switch>
-        <Route exact path="/">
-          <div className="App">TEST</div>
-          <Home />
-        </Route>
-      </Switch>
+        <div className="app-route glassmorphism">
+          <Switch>
+            <Route exact path="/">
+              <div className="App">TEST</div>
+              <Home />
+            </Route>
+          </Switch>
+        </div>
 
-      <Menu />
+        <Social />
+      </div>
     </BrowserRouter>
   );
 }
