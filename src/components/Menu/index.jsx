@@ -3,9 +3,10 @@ import './styles.scss';
 import Johanes from './assets/johanes.jpg';
 
 function Navbar() {
+  const isMobile = window.innerWidth<=990;
   return (
-    <nav className="menu glassmorphism">
-      <img src={Johanes} alt="Johanes Ronaldo"/>
+    <nav className={isMobile ? "menu-mobile glassmorphism" : "menu glassmorphism"}>
+      {!isMobile && <img src={Johanes} alt="Johanes Ronaldo"/>}
       <div className="menu-name">Johanes Ronaldo</div>
       <ul>
         <li><Link to="/">Home</Link></li>
