@@ -1,8 +1,6 @@
 import './styles.scss';
-import Social from '../../components/Social';
 
 function Contact() {
-  const isMobile = window.innerWidth<=990;
   const socialMedia = ['fa fa-envelope','fa fa-whatsapp','fa fa-linkedin','fa fa-instagram']
 
   return (
@@ -17,7 +15,6 @@ function Contact() {
           <div className="contact-item glassmorphism" key={i}><i className={item} /></div>
         ))}
       </div>
-      {/*<Social />*/}
     </div>
   );
 }

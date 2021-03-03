@@ -42,7 +42,10 @@ function App() {
                 <Home />
               </Route>
               <Route path="/about">
-                TEST
+                <About />
+              </Route>
+              <Route path="/portfolio">
+                <Portfolio />
               </Route>
               <Route path="/contact">
                 <Contact />
