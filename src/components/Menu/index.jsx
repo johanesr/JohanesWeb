@@ -8,8 +8,8 @@ function Navbar() {
 
   return (
     <nav className={isMobile ? "menu-mobile glassmorphism" : "menu glassmorphism"}>
-      {!isMobile && <img src={Johanes} alt="Johanes Ronaldo"/>}
-      <div className="menu-name">Johanes Ronaldo</div>
+      <img src={Johanes} alt="Johanes Ronaldo"/>
+      {!isMobile && <div className="menu-name">Johanes Ronaldo</div>}
 
       <ul>
         <Link to="/"><li>Home</li></Link>
