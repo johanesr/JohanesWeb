@@ -12,6 +12,11 @@
     height: 150px;
     cursor: pointer;
     overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .portfolio-item:hover {
+    transform: scale(1.1,1.1);
   }
 
   i {
@@ -22,5 +27,11 @@
     min-width: 100%;
     min-height: 100%
   }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
 
 }

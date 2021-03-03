@@ -1,0 +1,30 @@
+.about {
+  //text-align: left;
+  //padding: 10px 25px;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .cv-button {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .cv-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1,1.1);
+  }
+}

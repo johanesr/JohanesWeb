@@ -3,15 +3,21 @@ import './styles.scss';
 function Menu() {
   return(
     <div className="social glassmorphism">
-      <div className="social-icon">
-        <i className="fa fa-github" />
-      </div>
-      <div className="social-icon">
-        <i className="fa fa-linkedin" />
-      </div>
-      <div className="social-icon">
-        <i className="fa fa-instagram" />
-      </div>
+      <a href="https://github.com/johanesr">
+        <div className="social-icon">
+          <i className="fa fa-github" />
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/johanes-ronaldo/">
+        <div className="social-icon">
+          <i className="fa fa-linkedin" />
+        </div>
+      </a>
+      <a href="https://www.instagram.com/ronaldo97">
+        <div className="social-icon">
+          <i className="fa fa-instagram" />
+        </div>
+      </a>
       <div className="social-icon mode">
         <i className="fa fa-moon-o" />
       </div>

@@ -95,8 +95,14 @@
   min-height: auto;
   height: 150px;
   cursor: pointer;
+  transition: transform 0.5s;
 
   i {
     font-size: 32px;
   }
+}
+
+.app-item:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1,1.1);
 }

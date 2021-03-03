@@ -1,7 +1,13 @@
 import './styles.scss';
 
 function Contact() {
-  const socialMedia = ['fa fa-envelope','fa fa-whatsapp','fa fa-linkedin','fa fa-instagram']
+  const socialLink = [
+    'mailto:someone@example.com',
+    'https://github.com/johanesr',
+    'https://www.linkedin.com/in/johanes-ronaldo/',
+    'https://www.instagram.com/ronaldo97'
+  ]
+  const socialMedia = ['fa fa-envelope','fa fa-github','fa fa-linkedin','fa fa-instagram']
 
   return (
     <div className="contact">
@@ -12,7 +18,9 @@ function Contact() {
       </div>
       <div className="app-body">
         {socialMedia.map((item, i) => (
+          <a href={socialLink[i]} >
           <div className="app-item glassmorphism" key={i}><i className={item} /></div>
+          </a>
         ))}
       </div>
     </div>

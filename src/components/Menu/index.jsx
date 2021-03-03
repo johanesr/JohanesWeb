@@ -12,10 +12,10 @@ function Navbar() {
       <div className="menu-name">Johanes Ronaldo</div>
 
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <Link to="/"><li>Home</li></Link>
+        <Link to="/about"><li>About</li></Link>
+        <Link to="/portfolio"><li>Portfolio</li></Link>
+        <Link to="/contact"><li>Contact</li></Link>
       </ul>
     </nav>
   );
