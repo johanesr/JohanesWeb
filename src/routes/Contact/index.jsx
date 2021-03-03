@@ -5,14 +5,14 @@ function Contact() {
 
   return (
     <div className="contact">
-      <div className="contact-head">Contact</div>
-      <div className="contact-description">
+      <div className="app-head">Contact</div>
+      <div className="app-description">
         <div>Getting to know someone is a beautiful process,</div>
         <div>so send me a message and let's get to know each other!</div>
       </div>
-      <div className="contact-body">
+      <div className="app-body">
         {socialMedia.map((item, i) => (
-          <div className="contact-item glassmorphism" key={i}><i className={item} /></div>
+          <div className="app-item glassmorphism" key={i}><i className={item} /></div>
         ))}
       </div>
     </div>

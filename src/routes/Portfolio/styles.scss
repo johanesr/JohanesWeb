@@ -1,25 +1,6 @@
 .portfolio {
   text-align: center;
 
-  .portfolio-head {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 20px 0;
-  }
-
-  .portfolio-description {
-    margin: 25px 0;
-  }
-
-  .portfolio-body {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(50px, 250px));
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 20px;
-  }
-
   .portfolio-item {
     display: flex;
     justify-content: center;
