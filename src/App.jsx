@@ -7,6 +7,9 @@ const Particles = React.lazy(() => import('react-particles-js'));
 const Social = React.lazy(() => import('./components/Social'));
 const Menu = React.lazy(() => import('./components/Menu'));
 const Home = React.lazy(() => import('./routes/Home'));
+const About = React.lazy(() => import('./routes/About'));
+const Portfolio = React.lazy(() => import('./routes/Portfolio'));
+const Contact = React.lazy(() => import('./routes/Contact'))
 
 const particlesParams = {
   particles: {
@@ -40,6 +43,9 @@ function App() {
               </Route>
               <Route path="/about">
                 TEST
+              </Route>
+              <Route path="/contact">
+                <Contact />
               </Route>
             </Switch>
           </div>
