@@ -17,6 +17,10 @@
   .app-route {
     width: 70%;
     height: 85%;
+    @media (max-width: 990px) {
+      width: 90%;
+      height: 100vh;
+    }
   }
 
 }
@@ -28,7 +32,9 @@
   left: 0;
   right: 0;
   z-index: -1;
-  background: linear-gradient(to bottom, #04C8DE, #FF5EDF);
+  //background: linear-gradient(to bottom, #04C8DE, #FF5EDF);
+  //background: linear-gradient(to bottom, #4504de, #38973f);
+  background: linear-gradient(to bottom, #04C8DE, #4504de);
 }
 
 .glassmorphism {
@@ -37,4 +43,27 @@
   -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   border-radius: 10px;
+}
+
+// This creates the line
+.line-with-text:before,
+.line-with-text:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+
+// This create spaces between line and text
+.line-with-text:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.line-with-text:after {
+  left: 0.5em;
+  margin-right: -50%;
 }

@@ -1,11 +1,12 @@
+import React, { Suspense } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.scss';
-import Particles from 'react-particles-js';
 
-import Social from './components/Social';
-import Menu from './components/Menu'
+const Particles = React.lazy(() => import('react-particles-js'));
 
-import Home from './routes/Home';
+const Social = React.lazy(() => import('./components/Social'));
+const Menu = React.lazy(() => import('./components/Menu'));
+const Home = React.lazy(() => import('./routes/Home'));
 
 const particlesParams = {
   particles: {
@@ -21,27 +22,32 @@ const particlesParams = {
 
 function App() {
   return (
-    <BrowserRouter>
+    <Suspense fallback={<div>Loading...</div>}>
+      <BrowserRouter>
 
-      <Particles
-        className="particles"
-        params={particlesParams}
-      />
-      <div className="app-wrapper">
-        <Menu />
+        <Particles
+          className="particles"
+          params={particlesParams}
+        />
 
-        <div className="app-route glassmorphism">
-          <Switch>
-            <Route exact path="/">
-              <div className="App">TEST</div>
-              <Home />
-            </Route>
-          </Switch>
+        <div className="app-wrapper">
+          <Menu />
+
+          <div className="app-route glassmorphism">
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/about">
+                TEST
+              </Route>
+            </Switch>
+          </div>
+
+          <Social />
         </div>
-
-        <Social />
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </Suspense>
   );
 }
 
