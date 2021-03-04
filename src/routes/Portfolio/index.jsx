@@ -12,7 +12,7 @@ function Portfolio() {
       <div className="app-description">
         <div>Check out my previous works!</div>
       </div>
-      <div className="app-body">
+      <div className="app-body glassmorphism">
         <a href="https://github.com/johanesr">
           <div className="portfolio-item glassmorphism">
             <i className="fa fa-github" />
@@ -38,6 +38,30 @@ function Portfolio() {
             <img src={Thesis} alt="Pawsome"/>
           </div>
         </a>
+        <a href="https://github.com/johanesr">
+          <div className="portfolio-item glassmorphism">
+            <i className="fa fa-github" />
+          </div>
+        </a>
+        <a href="https://github.com/johanesr">
+          <div className="portfolio-item glassmorphism">
+            <i className="fa fa-github" />
+          </div>
+        </a>
+        <a href="https://github.com/johanesr">
+          <div className="portfolio-item glassmorphism">
+            <i className="fa fa-github" />
+          </div>
+        </a>
+        <a href="https://github.com/johanesr">
+          <div className="portfolio-item glassmorphism">
+            <i className="fa fa-github" />
+          </div>
+        </a><a href="https://github.com/johanesr">
+        <div className="portfolio-item glassmorphism">
+          <i className="fa fa-github" />
+        </div>
+      </a>
       </div>
     </div>
   );
