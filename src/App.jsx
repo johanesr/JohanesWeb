@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback={<Loading curTheme={theme}/>}>
       <BrowserRouter>
         <MyContext.Provider isMobile={window.innerWidth<=990}/>
         <Particles

@@ -1,8 +1,8 @@
 import './styles.scss';
 
-function Loading() {
+function Loading(props) {
   return(
-    <div className="loading">
+    <div className={props.theme ? "loading" : "loading dark"}>
       <div className="loading-text">
         Please wait while we render the pages :(
       </div>
