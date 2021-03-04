@@ -48,20 +48,6 @@ function Portfolio() {
             <i className="fa fa-github" />
           </div>
         </a>
-        <a href="https://github.com/johanesr">
-          <div className="portfolio-item glassmorphism">
-            <i className="fa fa-github" />
-          </div>
-        </a>
-        <a href="https://github.com/johanesr">
-          <div className="portfolio-item glassmorphism">
-            <i className="fa fa-github" />
-          </div>
-        </a><a href="https://github.com/johanesr">
-        <div className="portfolio-item glassmorphism">
-          <i className="fa fa-github" />
-        </div>
-      </a>
       </div>
     </div>
   );
