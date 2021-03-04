@@ -35,7 +35,19 @@
   z-index: -1;
   //background: linear-gradient(to bottom, #04C8DE, #FF5EDF);
   //background: linear-gradient(to bottom, #4504de, #38973f);
+  //background: linear-gradient(to bottom, #4a47a3, #a7c5eb);
   background: linear-gradient(to bottom, #04C8DE, #4504de);
+}
+
+.dark-particles {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, #868f96, #596164);
+
 }
 
 .glassmorphism {

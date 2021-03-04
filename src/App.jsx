@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { useState, Suspense } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.scss';
 
@@ -9,7 +9,9 @@ const Menu = React.lazy(() => import('./components/Menu'));
 const Home = React.lazy(() => import('./routes/Home'));
 const About = React.lazy(() => import('./routes/About'));
 const Portfolio = React.lazy(() => import('./routes/Portfolio'));
-const Contact = React.lazy(() => import('./routes/Contact'))
+const Contact = React.lazy(() => import('./routes/Contact'));
+
+const MyContext = React.createContext();
 
 const particlesParams = {
   particles: {
@@ -24,12 +26,17 @@ const particlesParams = {
 }
 
 function App() {
+  const [theme, setTheme] = useState(true); //if true then light theme else dark
+  const onChangeTheme = () => {
+    setTheme(!theme);
+  }
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <BrowserRouter>
-
+        <MyContext.Provider isMobile={window.innerWidth<=990}/>
         <Particles
-          className="particles"
+          className={theme ? "particles" : "dark-particles"}
           params={particlesParams}
         />
 
@@ -53,7 +60,7 @@ function App() {
             </Switch>
           </div>
 
-          <Social />
+          <Social changeTheme={onChangeTheme}/>
         </div>
       </BrowserRouter>
     </Suspense>
