@@ -2,8 +2,9 @@ import React, { useState, Suspense } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.scss';
 
-const Particles = React.lazy(() => import('react-particles-js'));
+import Loading from './components/Loading';
 
+const Particles = React.lazy(() => import('react-particles-js'));
 const Social = React.lazy(() => import('./components/Social'));
 const Menu = React.lazy(() => import('./components/Menu'));
 const Home = React.lazy(() => import('./routes/Home'));
@@ -32,7 +33,7 @@ function App() {
   }
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading />}>
       <BrowserRouter>
         <MyContext.Provider isMobile={window.innerWidth<=990}/>
         <Particles

@@ -1,0 +1,16 @@
+.loading {
+  background: linear-gradient(to bottom, #04C8DE, #4504de);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+
+  .loading-text {
+    font-size: 28px;
+    font-weight: 900;
+    margin: 20px 0;
+  }
+}
