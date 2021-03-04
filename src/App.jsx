@@ -60,7 +60,7 @@ function App() {
             </Switch>
           </div>
 
-          <Social changeTheme={onChangeTheme}/>
+          <Social changeTheme={onChangeTheme} curTheme={theme}/>
         </div>
       </BrowserRouter>
     </Suspense>

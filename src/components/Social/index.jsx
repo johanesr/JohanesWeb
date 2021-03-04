@@ -1,11 +1,8 @@
 import './styles.scss';
 
 function Menu(props) {
-  const theme = props.theme;
-
   return(
     <div className="social glassmorphism">
-      {console.log(props)}
       <a href="https://github.com/johanesr">
         <div className="social-icon">
           <i className="fa fa-github" />
@@ -22,7 +19,7 @@ function Menu(props) {
         </div>
       </a>
       <div className="social-icon mode" onClick={props.changeTheme}>
-        <i className="fa fa-moon-o" />
+        <i className={props.curTheme ? "fa fa-moon-o" : "fa fa-sun-o"} />
       </div>
     </div>
   );
