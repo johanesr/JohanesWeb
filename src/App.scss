@@ -97,7 +97,6 @@
   grid-template-columns: repeat(2, minmax(50px, 250px));
   justify-content: center;
   align-items: center;
-  gap: 20px;
   margin: 20px;
 }
 
@@ -109,6 +108,7 @@
   height: 150px;
   cursor: pointer;
   transition: transform 0.5s;
+  margin: 10px;
 
   i {
     font-size: 32px;
